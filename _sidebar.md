@@ -1,14 +1,13 @@
-* [HOME](./)
+- [doelstelling](/docs/doelstelling)
 
-* [doelstelling](./)
+- Probleemstelling
+  * [Abstract Design](/docs/abstractDesign)
+  * [Hardware Analyse](/docs/HardwareProbleemstelling)
+  * [Software Analyse](/docs/SoftwareProbleemstelling)
+  * [Conclusie](/docs/conclusie)
 
-* [Probleemstelling](./tutorials/index)
-  * [Hardware Analyse](./tutorials/tomcat/index)
-  * [Software Analyse](./tutorials/cloud/index)
-  * [Conclusie](./tutorials/java/index)
+- [Gebruikte componenten](/docs/componenten)
 
-* [About](./about/index)
-
-* [Contact](./contact/index)
+- [Contact](./contact/index)
 
 <!-- https://opensource.com/article/20/7/docsify-github-pages -->
