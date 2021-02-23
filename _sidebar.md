@@ -1,12 +1,12 @@
 * [doelstelling](./docs/doelstelling)
 
 * Probleemstelling
-  * [Abstract Design](./docs/abstractDesign)
-  * [Hardware Analyse](./docs/HardwareProbleemstelling)
-  * [Software Analyse](./docs/SoftwareProbleemstelling)
-  * [Conclusie](./docs/conclusie)
+  * [Abstract Design](./docs/abstractDesign.md)
+  * [Hardware Analyse](./docs/HardwareProbleemstelling.md)
+  * [Software Analyse](./docs/SoftwareProbleemstelling.md)
+  * [Conclusie](./docs/conclusie.md)
 
-* [Gebruikte componenten](./docs/componenten)
+* [Gebruikte componenten](./docs/componenten.md)
 
 * [Contact](./contact/index)
 
