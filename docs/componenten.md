@@ -1,6 +1,6 @@
 # componenten
 
-> argumentatie van gekozen component kunt u vinden in [Hardware Probleemstelling](/docs/HardwareProbleemstelling)
+> argumentatie van gekozen component kunt u vinden in [Hardware Probleemstelling](./docs/HardwareProbleemstelling)
 <table>
 <tr>
 <th>Naam</th>
