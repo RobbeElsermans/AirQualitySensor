@@ -8,6 +8,6 @@
 
 * [Gebruikte componenten](./docs/componenten.md)
 
-* [Contact](./contact/index)
+* [Bronnen](./docs/bronnen.md)
 
 <!-- https://opensource.com/article/20/7/docsify-github-pages -->
