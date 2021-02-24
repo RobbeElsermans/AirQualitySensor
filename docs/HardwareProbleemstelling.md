@@ -1,2 +1,3 @@
 # Hardware probleemstelling
-robbe is cool
+> schema
+<img src="./pictures/schema_hardware.png">
