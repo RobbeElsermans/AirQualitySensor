@@ -11,9 +11,6 @@ int error;
 
 SDS011 my_sds;
 
-
-
-
 void setup() {
   my_sds.begin(26, 25);
   Serial.begin(9600);

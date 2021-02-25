@@ -5,74 +5,33 @@
 
 #include "DHT.h"
 
-#define DHTPIN 21
-
-#define DHTTYPE DHT22
-
-DHT dht(DHTPIN, DHTTYPE);
-
-#include <WiFi.h>
-
-const char* ssid     = "barak2";
-const char* password = "-B_Q*824";
-
-const char* host = "data.sparkfun.com";
-const char* streamId   = "....................";
-const char* privateKey = "....................";
+int dhtPin = 21;
+int DHTTYPE = DHT22;
+DHT dht(dhtPin, DHTTYPE);
 
 void setup() {
-
-  Serial.println(F("DHTxx test!"));
-
   dht.begin();
-
   Serial.begin(115200);
+  Serial.println(F("DHTxx test!"));
   delay(10);
-
-  Serial.println();
-  Serial.println();
-  Serial.print("Connecting to ");
-  Serial.println(ssid);
-
-  WiFi.begin(ssid, password);
-
-  while (WiFi.status() != WL_CONNECTED) {
-    delay(500);
-    Serial.print(".");
-  }
-
-  Serial.println("");
-  Serial.println("WiFi connected");
-  Serial.println("IP address: ");
-  Serial.println(WiFi.localIP());
 }
 void loop() {
-  // Wait a few seconds between measurements.
-  delay(2000);
+  delay(1000);
   float h = dht.readHumidity();
   float t = dht.readTemperature();
-  float f = dht.readTemperature(true);
+  float hic = dht.computeHeatIndex(t, h, false);
 
   // Check if any reads failed and exit early (to try again).
-  if (isnan(h) || isnan(t) || isnan(f)) {
+  if (isnan(h) || isnan(t)) {
     Serial.println(F("Failed to read from DHT sensor!"));
     return;
   }
 
-  float hif = dht.computeHeatIndex(f, h);
-  float hic = dht.computeHeatIndex(t, h, false);
-
   Serial.print(F("Humidity: "));
   Serial.print(h);
-  Serial.print(F("%  Temperature: "));
+  Serial.print(F("% \t Temperature: "));
   Serial.print(t);
-  Serial.print(F("°C "));
-  Serial.print(f);
-  Serial.print(F("°F  Heat index: "));
+  Serial.print(F("°C \t Heat index: "));
   Serial.print(hic);
-  Serial.print(F("°C "));
-  Serial.print(hif);
-  Serial.println(F("°F"));
-
-  delay(5000);
+  Serial.println(F("°C "));
 }
