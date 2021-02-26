@@ -84,8 +84,8 @@ Het is mogelijk dat we later naar de ESP12f (ESP8266 familie) overschakelen. Aan
             <li><a target="_blank" href="https://en.wikipedia.org/wiki/I%C2%B2C">I²C</a> protocol 3.3V</li>
             <li>meetbereik temperatuur: -40°C ~ +85°C</li>
             <li>meetbereik luchtvochtigheid: 10% ~ 95% </li>
-            <li>meetbereik eCO²: 400ppm - 32768ppm</li>
-            <li>meetbereik eTVOC: 0ppb - 29206ppb</li>
+            <li>meetbereik eCO²: 400ppm ~ 32768ppm</li>
+            <li>meetbereik eTVOC: 0ppb ~ 29206ppb</li>
             <li>leessnelheid = 100kHz (0.01ms)</li>
         </ul>
     </td>
@@ -126,19 +126,49 @@ Het is mogelijk dat we later naar de ESP12f (ESP8266 familie) overschakelen. Aan
 </tr>
 <tr>
     <td>LM35</td>
-    <td>eigenschap</td>
+    <td>
+        <ul>
+            <li><b>temperatuursensor</b></li>
+            <li>V<sub>cc</sub> = 4V - 30V</li>
+            <li>I<sub>max</sub> = 60µA</li>
+            <li>analoge uitgang 0 mV + 10.0 mV/°C</li>
+            <li>Meetbereik temperatuur: -55°C ~ +150°C - 1°C afwijking</li>
+            <li>leessnelheid = continue</li>
+        </ul>
+    </td>
     <td>argument</td>
     <td><a target="_blank" href="https://www.tinytronics.nl/shop/nl/sensoren/lm35-to-92-thermometer-temperatuur-sensor">link</a></td>
 </tr>
 <tr>
     <td>MHZ19</td>
-    <td>eigenschap</td>
+    <td>
+        <ul>
+            <li><b>CO²</b></li>
+            <li>V<sub>cc</sub> = 4.9V - 5.1V</li>
+            <li>I<sub>max</sub> = 125mA</li>
+            <li><a target="_blank" href="https://en.wikipedia.org/wiki/Universal_asynchronous_receiver-transmitter">UART</a> protocol 3.3V</li>
+            <li>Meetbereik: 400ppm ~ 2000ppm</li>
+            <li>opwarmtijd: ~1min</li>
+            <li>leessnelheid = 1Hz (1s)</li>
+        </ul>
+    </td>
     <td>argument</td>
     <td><a target="_blank" href="https://www.tinytronics.nl/shop/nl/sensoren/winsen-mh-z19c-co2-sensor-met-kabel">link</a></td>
 </tr>
 <tr>
     <td>BME280</td>
-    <td>eigenschap</td>
+    <td>
+        <ul>
+            <li><b>temperatuur, barometer & luchtvochtigheid</b></li>
+            <li>V<sub>cc</sub> = 3.3V</li>
+            <li>I<sub>max</sub> = 3.6µA</li>
+            <li><a target="_blank" href="https://en.wikipedia.org/wiki/I%C2%B2C">I²C</a> protocol 3.3V</li>
+            <li>Meetbereik temperatuur: -40°C ~ +85°C</li>
+            <li>Meetbereik luchtvochtigheid: 0% ~ 100%</li>
+            <li>Meetbereik luchtdruk: 300hPa ~ 1100hPa</li>
+            <li>leessnelheid = 1Hz (1s)</li>
+        </ul>
+    </td>
     <td>argument</td>
     <td><a target="_blank" href="https://www.tinytronics.nl/shop/nl/sensoren/temperatuur-lucht-vochtigheid/bme280-digitale-barometer-druk-en-vochtigheid-sensor-module">link</a></td>
 </tr>
