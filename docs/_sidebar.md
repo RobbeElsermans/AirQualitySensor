@@ -6,7 +6,7 @@
   * [Software Analyse](./pagina/SoftwareProbleemstelling.md)
   * [Conclusie](./pagina/conclusie.md)
 
-* [Gebruikte componenten](./pagina/componenten.md)
+* [Componenten lijst](./pagina/componenten.md)
 
 * [Bronnen](./pagina/bronnen.md)
 
