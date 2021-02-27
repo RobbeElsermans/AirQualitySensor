@@ -4,3 +4,5 @@ We maken gebruik van Node-Red, omdat de Node-Red applicatie het gemakelijk maakt
 
 Het protocol dat we op onze wifi connectie gebruiken is MQTT. Het vraagt dat weinig recources, waardoor het handig is voor microchips.
 
+<img src="./picture/Node_Communicatie.png">
+<a target="_blank" href="https://randomnerdtutorials.com/esp8266-and-node-red-with-mqtt/">Source Picture</a>
