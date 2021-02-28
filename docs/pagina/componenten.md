@@ -4,7 +4,6 @@
 <table>
 <tr>
 <th>Naam</th>
-<th>Argument</th>
-<th>Naam</th>
+<th>Datasheet</th>
 </tr>
 </table>

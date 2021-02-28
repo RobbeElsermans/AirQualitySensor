@@ -60,8 +60,7 @@ Het is mogelijk dat we later naar de ESP12f (ESP8266 familie) overschakelen. Aan
     </td>
     <td>Deze argumentatie is idem als de MQ-7. zeer nauwkeurig mits lange opwarm tijd</td>
     <td><a target="_blank" href="https://www.tinytronics.nl/shop/nl/sensoren/mq-135-gas-sensor-module">link</a></td>
-    <td><a target="_blank" href=""></a></td>
-    <td><a target="_blank" href=""></a></td>
+    <td><a target="_blank" href="https://www.olimex.com/Products/Components/Sensors/Gas/SNS-MQ135/resources/SNS-MQ135.pdf">link</a></td>
 </tr>
 <tr>
     <td>DHT22</td>
@@ -78,8 +77,8 @@ Het is mogelijk dat we later naar de ESP12f (ESP8266 familie) overschakelen. Aan
     </td>
     <td>De bekende DHT22 is de sterkere variant van DHT11. Hij heeft een groote bereik van temperatuur. Enkel zegt men dat deze onbetrouwbaar is in tijd. Maar voor een gewone temperatuurmeting zonder criticaal proces hieraan vast, is hij zeker goed genoeg. </td>
     <td><a target="_blank" href="https://www.tinytronics.nl/shop/nl/sensoren/dht22-thermometer-temperatuur-en-vochtigheids-sensor">link</a></td>
-    <td><a target="_blank" href=""></a></td>
-    <td><a target="_blank" href=""></a></td>
+    <td><a target="_blank" href="https://www.sparkfun.com/datasheets/Sensors/Temperature/DHT22.pdf">link</a></td>
+    <td><a target="_blank" href="https://github.com/adafruit/DHT-sensor-library">link</a></td>
 </tr>
 <tr>
     <td>CCS811</td>
@@ -98,8 +97,8 @@ Het is mogelijk dat we later naar de ESP12f (ESP8266 familie) overschakelen. Aan
     </td>
     <td>Een minder bekende sensor maar zeker wel bekend in IoT toepassingen. Het kan temperatuur, eCO² en eTVOC. Het heeft geen opwarm tijd dus is direct bruikbaar. Het is ook een SMD component wat zeker een voordeel is om het zo compact mogelijk te maken.</td>
     <td><a target="_blank" href="https://www.tinytronics.nl/shop/nl/sensoren/ccs811-luchtkwaliteit-sensor">link</a></td>
-        <td><a target="_blank" href=""></a></td>
-    <td><a target="_blank" href=""></a></td>
+    <td><a target="_blank" href="https://www.sciosense.com/wp-content/uploads/documents/SC-001232-DS-2-CCS811B-Datasheet-Revision-2.pdf">link</a></td>
+    <td><a target="_blank" href="https://github.com/adafruit/Adafruit_CCS811">link</a></td>
 </tr>
 <tr>
     <td>GY-NEO6MV2</td>
@@ -115,8 +114,8 @@ Het is mogelijk dat we later naar de ESP12f (ESP8266 familie) overschakelen. Aan
     </td>
     <td>De GPS module GY-NEO6MV2 is een zeer snel, klein en compacte module om de locatie te bepalen. Het is makkelijk implementeerbaar en makkelijk codeedbaar.</td>
     <td><a target="_blank" href="https://www.tinytronics.nl/shop/nl/communicatie/gps/gy-neo6mv2-gps-module">link</a></td>
-        <td><a target="_blank" href=""></a></td>
-    <td><a target="_blank" href=""></a></td>
+        <td><a target="_blank" href="https://www.u-blox.com/sites/default/files/products/documents/NEO-6_DataSheet_(GPS.G6-HW-09005).pdf">link</a></td>
+    <td><a target="_blank" href="https://github.com/mikalhart/TinyGPSPlus">link</a></td>
 </tr>
 <tr>
     <td>SDS011</td>
@@ -134,8 +133,8 @@ Het is mogelijk dat we later naar de ESP12f (ESP8266 familie) overschakelen. Aan
     </td>
     <td>de fijnstofsensor SDS011 is een veel gebruikte sensor voor DIY-projecten. Het zal niet de nauwkeurigste zijn maar zeker wel 1 van de goedkoopste. En het geeft toch al een sterke indicatie van wat het gehalte is van fijnstof in de lucht. Het werkt met een ventilator die de lucht binnentrekt. Het zal dus eerst moeten opgezet wordne om de huidige luht erin te trekken vooraleer we kunnen meten.</td>
     <td><a target="_blank" href="https://www.tinytronics.nl/shop/nl/sensoren/nova-sds011-hoge-precisie-laser-stofsensor">link</a></td>
-        <td><a target="_blank" href=""></a></td>
-    <td><a target="_blank" href=""></a></td>
+        <td><a target="_blank" href="https://cdn-reichelt.de/documents/datenblatt/X200/SDS011-DATASHEET.pdf">link</a></td>
+    <td><a target="_blank" href="https://www.arduinolibraries.info/libraries/sds011-sensor-library">link</a></td>
 </tr>
 <tr>
     <td>LM35</td>
@@ -151,8 +150,7 @@ Het is mogelijk dat we later naar de ESP12f (ESP8266 familie) overschakelen. Aan
     </td>
     <td>De LM35 is een analoge temperatuur sensor die veel wordt gebruikt in de industrie. Het heeft een zeer groot bereik van meeting. Het is ook een zeer nauwkeurige sensor.</td>
     <td><a target="_blank" href="https://www.tinytronics.nl/shop/nl/sensoren/lm35-to-92-thermometer-temperatuur-sensor">link</a></td>
-        <td><a target="_blank" href=""></a></td>
-    <td><a target="_blank" href=""></a></td>
+        <td><a target="_blank" href="https://www.ti.com/lit/ds/symlink/lm35.pdf">link</a></td>
 </tr>
 <tr>
     <td>MHZ19</td>
@@ -169,8 +167,8 @@ Het is mogelijk dat we later naar de ESP12f (ESP8266 familie) overschakelen. Aan
     </td>
     <td>Het is een sensor dat enkel en alleen is ontworpen om CO² te meten. Het zal dus zeer nauwkeurig zijn. Enkel heeft het een opwarmtijd nodig.</td>
     <td><a target="_blank" href="https://www.tinytronics.nl/shop/nl/sensoren/winsen-mh-z19c-co2-sensor-met-kabel">link</a></td>
-        <td><a target="_blank" href=""></a></td>
-    <td><a target="_blank" href=""></a></td>
+        <td><a target="_blank" href="https://www.winsen-sensor.com/d/files/PDF/Infrared%20Gas%20Sensor/NDIR%20CO2%20SENSOR/MH-Z19%20CO2%20Ver1.0.pdf">link</a></td>
+    <td><a target="_blank" href="https://github.com/strange-v/MHZ19">link</a></td>
 </tr>
 <tr>
     <td>BME280</td>
@@ -188,8 +186,8 @@ Het is mogelijk dat we later naar de ESP12f (ESP8266 familie) overschakelen. Aan
     </td>
     <td>Deze IC heeft een tal van metingen aanboord. We kunnen temperatuur, de luchtvochtigheid en de druk meten. Het is een SMD component dus makkelijk integreerbaar op een pcb.</td>
     <td><a target="_blank" href="https://www.tinytronics.nl/shop/nl/sensoren/temperatuur-lucht-vochtigheid/bme280-digitale-barometer-druk-en-vochtigheid-sensor-module">link</a></td>
-        <td><a target="_blank" href=""></a></td>
-    <td><a target="_blank" href=""></a></td>
+        <td><a target="_blank" href="https://www.mouser.com/datasheet/2/783/BST-BME280_DS001-11-844833.pdf">link</a></td>
+    <td><a target="_blank" href="https://github.com/adafruit/Adafruit_BME280_Library">link</a></td>
 </tr>
 </table>
 
