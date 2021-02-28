@@ -1,5 +1,5 @@
 # Hardware probleemstelling
-### hardware schema consept
+> hardware schema consept
 
 <img src="./picture/schema hardware consept.png">
 
