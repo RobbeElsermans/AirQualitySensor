@@ -11,6 +11,11 @@ De hardware (ESPxx) zal een verbinding aangaan met de remote server om al zijn d
 
 
 ### MQTT protocol
+<img src="https://wiki.dragino.com/images/thumb/c/cb/YuanliMQTT.png/400px-YuanliMQTT.png">
+<div style="font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; top: -0.5em">
+<p>bron: <a href="https://wiki.dragino.com/index.php?title=Through_MQTT_to_upload_data"></a></p>
+</div>
+
 > <i>'MQTT (Message Queuing Telemetry Transport) is an open OASIS and ISO standard (ISO/IEC 20922) lightweight, publish-subscribe network protocol that transports messages between devices.'</i> <a target="_blank" href="https://en.wikipedia.org/wiki/MQTT">wikipedia</a>
 
 Zoals het citaat van wikipedia zegt, het is een lichtgewicht publish-subscribe netwerk dat data transporteerd tussen toestellen en is ideaal om te gebruiken bij IoT projecten. De client('s) zijn namelijk niet afhankelijk van de server. Dit komt omdat er tussen de client('s) en server(s) een <i>middleman</i> staat, genaamd de Broker. Deze Broker handeld alle gegevens. Men kan een subscribe op een topic en men kan een topic publishen. 
