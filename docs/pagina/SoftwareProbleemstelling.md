@@ -13,7 +13,7 @@ De hardware (ESPxx) zal een verbinding aangaan met de remote server om al zijn d
 ### MQTT protocol
 <img src="https://wiki.dragino.com/images/thumb/c/cb/YuanliMQTT.png/400px-YuanliMQTT.png">
 <div style="font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; top: -0.5em">
-<p>bron: <a href="https://wiki.dragino.com/index.php?title=Through_MQTT_to_upload_data"></a></p>
+<p>bron: <a href="https://wiki.dragino.com/index.php?title=Through_MQTT_to_upload_data">dragino.com</a></p>
 </div>
 
 > <i>'MQTT (Message Queuing Telemetry Transport) is an open OASIS and ISO standard (ISO/IEC 20922) lightweight, publish-subscribe network protocol that transports messages between devices.'</i> <a target="_blank" href="https://en.wikipedia.org/wiki/MQTT">wikipedia</a>
@@ -29,3 +29,9 @@ Een topic is een soort van url (bv. /woonkaper/lamp) die dan achterliggend gegev
 Er bestaan verschillende Brokers. 1 van de bekenste in IoT is <a target="_blank" href="https://mosquitto.org/">Mosquitto Broker</a>. Deze bestaat voor verschillende platformen. Wij gaan opteren voor een Debian platform (Ubuntu, Raspbian, ...).
 
 ### Node-RED
+<div style="display: flex; align-items: center; justify-content: center">
+<div style="flex-basis: 40%">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Node-red-icon.png/200px-Node-red-icon.png">
+</div>
+<div style="padding-left: 20px"><p>Node-RED is een open soure programma dat zeer modulair is omdat het over meer dan 100 plugins bevadt. Hiermee kunnen we alle kanten opgaan. Van MQTT tot Alexa smart Home System. Vandaar dat we dit gaan nemen. Het is een drag-drop-configure-link codering.</p></div>
+</div>
