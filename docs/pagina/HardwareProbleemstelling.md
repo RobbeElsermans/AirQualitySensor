@@ -1,7 +1,7 @@
 # Hardware probleemstelling
-### hardware schema & pcb design
+### hardware schema consept
 
-<img src="./picture/schema_hardware.png">
+<img src="./picture/schema hardware consept.png">
 
 ---------------
 
@@ -38,7 +38,7 @@ Het is mogelijk dat we later naar de ESP12f (ESP8266 familie) overschakelen. Aan
             <li>leessnelheid = continue</li>
         </ul>
     </td>
-    <td>argument</td>
+    <td>De MQ-7 is een wijd gebruikte sensor in de IoT wereld. Deze is traag maar wel nauwkeurig als je er een wachtijd opplakt van zeker 4 min. De datasheet schrijft voor om de sensor voor te verwarmen voor 48 uur. Wat tamelijk lang is. Voor een opstelling die ergens op een vaste locatie staat waar continue stroom naar geleverd wordt, is het zeker een goede keuzen om te gebruiken.</td>
     <td><a target="_blank" href="https://www.tinytronics.nl/shop/nl/sensoren/mq-7-gas-sensor-module">link</a></td>
 </tr>
 <tr>
@@ -55,7 +55,7 @@ Het is mogelijk dat we later naar de ESP12f (ESP8266 familie) overschakelen. Aan
             <li>leessnelheid = continue</li>
         </ul>
     </td>
-    <td>argument</td>
+    <td>Deze argumentatie is idem als de MQ-7. zeer nauwkeurig mits lange opwarm tijd</td>
     <td><a target="_blank" href="https://www.tinytronics.nl/shop/nl/sensoren/mq-135-gas-sensor-module">link</a></td>
 </tr>
 <tr>
@@ -71,14 +71,14 @@ Het is mogelijk dat we later naar de ESP12f (ESP8266 familie) overschakelen. Aan
             <li>leessnelheid = 2s of meer</li>
         </ul>
     </td>
-    <td>argument</td>
+    <td>De bekende DHT22 is de sterkere variant van DHT11. Hij heeft een groote bereik van temperatuur. Enkel zegt men dat deze onbetrouwbaar is in tijd. Maar voor een gewone temperatuurmeting zonder criticaal proces hieraan vast, is hij zeker goed genoeg. </td>
     <td><a target="_blank" href="https://www.tinytronics.nl/shop/nl/sensoren/dht22-thermometer-temperatuur-en-vochtigheids-sensor">link</a></td>
 </tr>
 <tr>
     <td>CCS811</td>
     <td>
         <ul>
-            <li><b>eCO² en eTVOC<sup>2</sup></b></li>
+            <li><b>temperatuur, eCO² en eTVOC<sup>2</sup></b></li>
             <li>V<sub>cc</sub> = 1.8V-3.3V</li>
             <li>I<sub>max</sub> = 54mA</li>
             <li><a target="_blank" href="https://en.wikipedia.org/wiki/I%C2%B2C">I²C</a> protocol 3.3V</li>
@@ -89,7 +89,7 @@ Het is mogelijk dat we later naar de ESP12f (ESP8266 familie) overschakelen. Aan
             <li>leessnelheid = 100kHz (0.01ms)</li>
         </ul>
     </td>
-    <td>argument</td>
+    <td>Een minder bekende sensor maar zeker wel bekend in IoT toepassingen. Het kan temperatuur, eCO² en eTVOC. Het heeft geen opwarm tijd dus is direct bruikbaar. Het is ook een SMD component wat zeker een voordeel is om het zo compact mogelijk te maken.</td>
     <td><a target="_blank" href="https://www.tinytronics.nl/shop/nl/sensoren/ccs811-luchtkwaliteit-sensor">link</a></td>
 </tr>
 <tr>
@@ -104,7 +104,7 @@ Het is mogelijk dat we later naar de ESP12f (ESP8266 familie) overschakelen. Aan
             <li>leessnelheid = 1Hz (1s)</li>
         </ul>
     </td>
-    <td>argument</td>
+    <td>De GPS module GY-NEO6MV2 is een zeer snel, klein en compacte module om de locatie te bepalen. Het is makkelijk implementeerbaar en makkelijk codeedbaar.</td>
     <td><a target="_blank" href="https://www.tinytronics.nl/shop/nl/communicatie/gps/gy-neo6mv2-gps-module">link</a></td>
 </tr>
 <tr>
@@ -121,7 +121,7 @@ Het is mogelijk dat we later naar de ESP12f (ESP8266 familie) overschakelen. Aan
             <li>leessnelheid = 1Hz (1s)</li>
         </ul>
     </td>
-    <td>argument</td>
+    <td>de fijnstofsensor SDS011 is een veel gebruikte sensor voor DIY-projecten. Het zal niet de nauwkeurigste zijn maar zeker wel 1 van de goedkoopste. En het geeft toch al een sterke indicatie van wat het gehalte is van fijnstof in de lucht.</td>
     <td><a target="_blank" href="https://www.tinytronics.nl/shop/nl/sensoren/nova-sds011-hoge-precisie-laser-stofsensor">link</a></td>
 </tr>
 <tr>
@@ -136,7 +136,7 @@ Het is mogelijk dat we later naar de ESP12f (ESP8266 familie) overschakelen. Aan
             <li>leessnelheid = continue</li>
         </ul>
     </td>
-    <td>argument</td>
+    <td>De LM35 is een analoge temperatuur sensor die veel wordt gebruikt in de industrie. Het heeft een zeer groot bereik van meeting. Het is ook een zeer nauwkeurige sensor.</td>
     <td><a target="_blank" href="https://www.tinytronics.nl/shop/nl/sensoren/lm35-to-92-thermometer-temperatuur-sensor">link</a></td>
 </tr>
 <tr>
@@ -179,6 +179,25 @@ Het is mogelijk dat we later naar de ESP12f (ESP8266 familie) overschakelen. Aan
 <p>eTVOC<sup>2</sup>: alle vluchtige organische stoffen (zoals Benzeen, Tolueen, Glycolen en Terpenen). <a target="_blank" href="https://www.ecolucht.nl/formaldehydemeter/tvoc.html#:~:text=Een%20TVOC%20meting%20analyseert%20niet,Tolueen%2C%20Glycolen%20en%20Terpenen).">ecolucht.nl</a> </p>
 <p>PM2.5<sup>3</sup>: zwevende stof met diameter kleiner dan 2.5µm<a target="_blank" href="https://www.irceline.be/nl/documentatie/faq/wat-is-fijnstof">irceline.be</a></p>
 <p>PM10<sup>4</sup>: zwevende stof met diameter kleiner dan 10µm<a target="_blank" href="https://www.irceline.be/nl/documentatie/faq/wat-is-fijnstof">irceline.be</a></p>
-<div>
+</div>
 
 ### voeding etc.
+
+De voeding moet 5V en 3.3V kunnen leveren. Als we al de I<sub>max</sub> optellen van al de sensoren die we gaan gebruiken en dit getal * 1.20 (20%) doen. dan hebben we de werkstroom die de voltage regulator minimum moet aankunnen. We hebben enkele opties om 5V en 3.3V te bekomen.
+<ul>
+<li>
+met zenerdiode
+</li>
+<li>
+met IC (LM78xx, LM3480, LM1117, LM317, ...)
+</li>
+</ul>
+Voor stabiliteitsredenen, gaan we gebruik maken van IC regulatoren. We kunnen hierbij kiezen uit <i>fixed</i> en <i>variable</i> regulatoren. Fixed zijn uit fabriek uit de juiste waardes, mits kleine afwijking. de variable regulatoren moeten we zelf afstellen. We kunnen dit dan naukeurig maken maar voor deze opstelling is dit niet van belang. We zien immers dat de voedingspanningen wel wat variaties kunnen verdragen. Om alles compact te houden, gaan we de voorkeur geven om SMD componenten te gebruiken. We moeten natuurlijk wel kijken of deze de gevraagde stroom kan leveren.
+
+> berekeningen aangaande stroombepaling
+
+I =I1+I2+I3+I4
+
+### hardware schema & pcb design
+
+<img src="./picture/schema_hardware.png">
